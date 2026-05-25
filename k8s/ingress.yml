@@ -10,7 +10,6 @@ spec:
   ingressClassName: nginx
 
   rules:
-
     - http:
         paths:
           - path: /api/sandbox
@@ -23,11 +22,11 @@ spec:
 
     - host: "*.preview.localhost"
       http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: router-service
-                port:
-                  number: 80
+      paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: router-service
+              port:
+                number: 80
