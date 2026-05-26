@@ -57,10 +57,12 @@ app.use((req, res, next) => {
      */
 
     if (host.split('.')[ 1 ] === 'agent') {
+        console.log("ROUTING TO AGENT");
         return getAgentProxy(sandboxId)(req, res, next);
     }
 
     else if (host.split('.')[ 1 ] === 'preview') {
+        console.log("ROUTING TO PREVIEW");
         return getProxy(sandboxId)(req, res, next);
     }
 })
