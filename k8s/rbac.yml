@@ -24,6 +24,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: resource-manager
+    namespace: default
 
 roleRef:
   kind: Role
