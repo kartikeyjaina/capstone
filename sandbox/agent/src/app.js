@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import fs from "fs";
+import path from "path";
 
 const WORKING_DIR = "/workspace";
 
