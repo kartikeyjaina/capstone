@@ -40,7 +40,7 @@ app.get("/list-files", async (req, res) => {
         files.push(relativePath);
       }
     }
-
+    
     return files;
   };
 
@@ -53,6 +53,7 @@ app.get("/list-files", async (req, res) => {
   } catch (err) {
     res.status(500).json({
       message: `Error listing files: ${err.message}`,
+      files,
       status: "error",
     });
   }

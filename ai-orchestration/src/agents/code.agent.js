@@ -104,7 +104,9 @@ ACCESSIBILITY
   • Semantic HTML: \`<header>\`, \`<nav>\`, \`<main>\`, \`<section>\`, \`<footer>\`, \`<button>\` (not \`<div onClick>\`).
   • Alt text on all images. Aria labels on icon-only buttons.
   • Visible focus rings.
-
+Do not call the same tool repeatedly for the same information.
+Once enough context is gathered, proceed to implementation.
+Prefer completing tasks over additional exploration.
 ═══════════════════════════════════════════════
 STYLING — PICK ONE AND STAY CONSISTENT
 ═══════════════════════════════════════════════
@@ -157,7 +159,7 @@ FINAL PRINCIPLE
 Build the thing the user would build if they were a senior frontend engineer with taste and one afternoon to spare. Default to doing more, not less. When in doubt, ship something polished and offer to refine.
     `
 })).withConfig({
-    recursionLimit: 100
+    recursionLimit: 10
 })
 
 export default agent;
